@@ -3,8 +3,8 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { message: "Enter first number", type: "number", name: "firstnumber" },
-  { message: "Enter second number", type: "number", name: "secondnumber" },
+  { message: "Enter your first number", type: "number", name: "firstnumber" },
+  { message: "Enter your second number", type: "number", name: "secondnumber" },
   {
     message: "select one of the operator to perform operation",
     type: "list",
@@ -25,3 +25,4 @@ else if (answer.operator === "Division")
 else {
   console.log("please select valid operator");
 }
+console.log("The End");
